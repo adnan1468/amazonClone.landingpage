@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-location hoverT">
+                <p class="del1">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa fa-map-marker"></i>
+                    <p class="del2">. India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select hoverT" id="">
+                    <option value="">All</option>
+                    <option value="">dept</option>
+                    <option value="">sell</option>
+                </select>
+
+                <input type="text" placeholder="Search your product..." class="search-input">
+                <i class="fa fa-search search-icon hoverT"></i>
+
+                <!-- <div class="search-icon hoverT">
+                    <i class="fa fa-search"></i>
+                </div> -->
+            </div>
+            <div class="lang hoverT">
+                <select name="" id="" class="eng">
+                    <option value="">EN</option>
+                    <option value="">eng</option>
+                    <option value="">tel</option>
+                    <option value="">urdu</option>
+                </select>
+                <div class="lang-i">
+                    <img src="images/Flag-US.webp" alt="">
+                </div>
+            </div>
+            <div class="nav-account hoverT">
+                <span class="lite">Hello, Sign in</span>
+                <div class="account-details">
+                    <p class="bolt">Account & Lists</p>
+                </div>
+            </div>
+            <div class="nav-orders hoverT">
+                <span class="lite">Returns</span>
+                <div class="orders-details">
+                    <p class="bolt">& Orders</p>
+                </div>
+            </div>
+            <div class="nav-cart hoverT">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="bolt">Cart</span>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="nav2 ">
+            <span class="lines" onclick="hamber()">&equiv; ALL</span>
+            <a href="">Today's deal</a>
+            <a href="">Customer service</a>
+            <a href="">Sell on amazon</a>
+            <a href="">Gift cart</a>
+        </div>
+    </header>
+    <main>
+        <div class="hero-banner">
+            <div class="bannerP">
+                <p>
+                    You are on amazon.com. You can also shop on Amazon India for millions of products
+                    with fast local delivery.
+                    <a>
+                        Click here to go to amazon.in
+                    </a>
+                </p>
+            </div>
+
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <p class="product-name">BENGOO-G9000-Controller-Cancelling-Headphones</p>
+                <p class="product-price">$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Product 2">
+                <p class="product-name">Redragon Gaming mouse</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box1_image.jpg" alt="Product 2">
+                <p class="product-name">Mens Wear raw matarial</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box2_image.jpg" alt="Product 2">
+                <p class="product-name">refresh your space</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box3_image.jpg" alt="Product 2">
+                <p class="product-name">Shop for you essentials</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box4_image.jpg" alt="Product 2">
+                <p class="product-name">samsang galaxyS24 Ultra</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box5_image.jpg" alt="Product 2">
+                <p class="product-name">Cosmetics</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box6_image.jpg" alt="Product 2">
+                <p class="product-name">Hanes Men's Hoodie</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box7_image.jpg" alt="Product 2">
+                <p class="product-name">shop for your creativeness</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box8_image.jpg" alt="Product 2">
+                <p class="product-name">Ladies wear</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+            <div class="product">
+                <img src="images/box9_image.jpg" alt="Product 2">
+                <p class="product-name">Gaming level UP</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+            </div>
+            <div class="product">
+                <img src="images/box10_image.jpg" alt="Product 2">
+                <p class="product-name">HP printer</p>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy now</button>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer1">
+                <a href="">Back to top</a>
+            </div>
+            <div class="footer2">
+
+                <div class="coloum1">
+                    <h1>Get to know us</h1>
+                    <a href="">About Amazon</a>
+                    <a href="">Careers</a>
+                    <a href="">Press Releases</a>
+                    <a href="">Amazon Science</a>
+                </div>
+                <div class="coloum2">
+                    <h1>Connect with us</h1>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                </div>
+                <div class="coloum3">
+                    <h1>Make Money With Us</h1>
+                    <a href="">Sell on Amazon</a>
+                    <a href="">Sell Under Amazon Accelerator </a>
+                    <a href="">Protect and Build Your Brand</a>
+                    <a href="">Amazon Global Selling</a>
+                    <a href="">Supply To Amazon</a>
+                    <a href="">Become an Affilate</a>
+                    <a href="">Fulfilment by Amazon</a>
+                    <a href="">Advertise Your Product</a>
+                    <a href="">Amazon pay on Merchants</a>
+                </div>
+                <div class="coloum4">
+                    <h1>Let Us Help You</h1>
+                    <a href="">Your Account</a>
+                    <a href="">Returns Centre</a>
+                    <a href="">Recalls and Product Safety Alerts</a>
+                    <a href="">100% Purchase Protection</a>
+                    <a href="">Amazon App Download</a>
+                    <a href="">Help</a>
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="footer-logo">
+                    <img src="images/amazon_logo.png">
+                </div>
+                <div class="col55">
+                    <i class="fa fa-globe globe"></i>
+                    <select name="" id="">
+                        <option value=""> English</option>
+                        <option value="">spanish</option>
+                        <option value="">German</option>
+                    </select>
+                </div>
+                <div class="currency">
+
+                    <p> <i class="fa fa-dollar"></i> USD - U.S.Dollar</p>
+                </div>
+                <div class="footer-Cimg">
+                    <p>
+                        <img src="images/Flag-US.webp" alt="">
+                        United State
+                    </p>
+
+                </div>
+            </div>
+            <div class="footer4">
+                <div class="foot1">
+                    <div class="box50">
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Amazon Music</a><br>
+                            <a href="#" class="link-description">Stream millions of songs</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Amazon Ads</a><br>
+                            <a href="#" class="link-description">Reach customers wherever they spend their time</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">6pm</a><br>
+                            <a href="#" class="link-description">Score deals on fashion brands</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">AbeBooks</a><br>
+                            <a href="#" class="link-description">Books, art & collectibles</a>
+                        </div>
+                    </div>
+                    <div class="box51">
+                        <div class="footer-link">
+                            <a href="#" class="link-title">ACX</a><br>
+                            <a href="#" class="link-description">Audiobook Publishing Made Easy</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Sell on Amazon</a><br>
+                            <a href="#" class="link-description">Start a Selling Account</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Amazon Business</a><br>
+                            <a href="#" class="link-description">Everything For Your Business</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">AmazonGlobal</a><br>
+                            <a href="#" class="link-description">Ship Orders Internationally</a>
+                        </div>
+                    </div>
+                    <div class="box52">
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Home Services</a><br>
+                            <a href="#" class="link-description">Experienced Pros Happiness Guarantee</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Amazon Web Services</a><br>
+                            <a href="#" class="link-description">Scalable Cloud Computing Services</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Audible</a><br>
+                            <a href="#" class="link-description">Listen to Books & Original Audio Performances</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Box Office Mojo</a><br>
+                            <a href="#" class="link-description">Find Movie Box </a>
+                        </div>
+                    </div>
+                    <div class="box53">
+                        <div class="footer-link">
+                            <a href="#" class="link-title">IMDb</a><br>
+                            <a href="#" class="link-description">Movies, TV & Celebrities</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">IMDbPro</a><br>
+                            <a href="#" class="link-description">Get Info Entertainment Professionals Need</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Kindle Direct Publishing</a><br>
+                            <a href="#" class="link-description">Indie Digital & Print Publishing Made Easy</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Prime Video Direct</a><br>
+                            <a href="#" class="link-description">Video Distribution Made Easy</a>
+                        </div>
+                    </div>
+                    <div class="box54">
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Shopbop</a><br>
+                            <a href="#" class="link-description">Designer Fashion Brands</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Woot!</a><br>
+                            <a href="#" class="link-description">Deals and Shenanigans</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Ring</a><br>
+                            <a href="#" class="link-description">Smart Home Security Systems</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">eero WiFi</a><br>
+                            <a href="#" class="link-description">Stream 4K Video in Every Room</a>
+                        </div>
+                    </div>
+                    <div class="box55">
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Blink</a><br>
+                            <a href="#" class="link-description">Smart Security for Every Home</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Neighbors App</a><br>
+                            <a href="#" class="link-description">Real-Time Crime & Safety Alerts</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">Amazon Subscription Boxes</a><br>
+                            <a href="#" class="link-description">Top subscription boxes – right to your door</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#" class="link-title">PillPack</a><br>
+                            <a href="#" class="link-description">Pharmacy Simplified</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer5">
+            <div class="foot2">
+                <a href="">Conditions of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Consumer Health Data Privacy Disclosure</a>
+                <a href="">Your Ads Privacy Choices</a>
+            </div>
+            <div class="copy-right">
+                <p>2020 Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
